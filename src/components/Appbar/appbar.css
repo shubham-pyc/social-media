@@ -41,6 +41,7 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
 .appbar__profile a {
     height: 40px;
 }
@@ -48,6 +49,12 @@
 .appbar__profile__logout {
     width: 22px;
     margin-bottom: 5px;
+}
+
+.appbar__profile__home {
+    width: 22px;
+    margin-bottom: 5px;
+    filter: invert(48%) sepia(79%) saturate(10%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
 .appbar .close {
@@ -60,7 +67,7 @@
     width: 22px;
 }
 
-.hamburger > img {
+.hamburger>img {
     width: 100%;
 }
 
@@ -78,10 +85,12 @@
         padding: 0.75rem;
         flex: 1;
     }
+
     .hamburger {
         display: flex;
         align-items: center;
     }
+
     .appbar__profile {
         gap: 1rem;
     }

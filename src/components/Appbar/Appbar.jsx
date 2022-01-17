@@ -1,6 +1,6 @@
 import React from "react";
 import { dp, logoutIcon, home } from "../../assets";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../features/userSlice";
 import "./appbar.css";
@@ -22,9 +22,9 @@ const Appbar = () => {
 
     return (
         <header className="appbar">
-            <button onClick={logoutHandler} aria-label="logout">
-                <img src={home} alt="logoutIcon" className="appbar__profile__logout" title="logout" />
-            </button>
+            <Link to={`/`} className="home">
+                <img src={home} alt="logoutIcon" className="appbar__profile__home" title="logout" />
+            </Link>
             <nav className="appbar__profile">
                 <img src={profileImage || dp} alt="profileImage" className="appbar__profile__dp" title="profile" />
                 <button onClick={logoutHandler} aria-label="logout">
